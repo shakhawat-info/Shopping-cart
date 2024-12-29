@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Aldrich", serif;
+}
+img{
+    width: 100%;
+}
+#main{
+    padding: 50px 10px;
+}
+#main .nav {
+    display: flex;
+    border: 1px solid #D4BDAC;
+}
+#main .nav button{
+    width: 50%;
+    padding: 10px ;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+#main .nav button.active{
+    background-color: #D4BDAC;
+}
+#main #cart {
+    display: none;
+}
+#main #products .allproducts{
+    display: flex;
+}
+#main #products .allproducts .item{
+    padding: 10px;
+    border: 1px solid #D4BDAC;
+    width: 100%;
+}
+#main #products .allproducts .item .productimg{
+    height: 200px;
+    background: #d1cdcd;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+}
+#main #products .allproducts .item .txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+#main #products .allproducts .item h3 span{
+    font-size: 16px;
+    color: #5d5a58;
+}
+#main #products .allproducts .quentity{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#main #products .allproducts .quentity .counter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#main #products .allproducts .quentity .counter button{
+    font-size: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+#main #products .allproducts .addcart{
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.allcarts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.allcarts .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(93, 90, 88, 0.156);
+}
+.allcarts .item button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: red;
+    padding: 5px;
+    cursor: pointer;
+}
