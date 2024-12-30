@@ -160,8 +160,8 @@ const products = [
       `<div class="item">
         <div class="productimg">${item.id}. ${item.name}</div>
         <div class="txt">
-          <h3 class="name">Product : <span class="pdctName" data-id="${item.id}">${item.name}</span></h3>
-          <h3 class="price">Price : <span class="pdctPrice" data-id="${item.id}">${item.price}</span></h3>
+          <h3 class="name"><span class="pdctName" data-id="${item.id}">${item.name}</span></h3>
+          <h3 class="price"><span class="pdctPrice" data-id="${item.id}">${item.price} </span> $ </h3>
           <h3 class="available">Available : <span class="quantity" data-id="${item.id}">${item.quantity}</span></h3>
           <div class="quentity">
             <h3>Quantity : </h3>

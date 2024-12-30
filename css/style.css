@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "Aldrich", serif;
 }
+body{
+    background-color: #484d57;
+}
 img{
     width: 100%;
 }
@@ -14,7 +17,7 @@ img{
 }
 #main .nav {
     display: flex;
-    border: 1px solid #D4BDAC;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #main .nav button{
     width: 50%;
@@ -27,22 +30,30 @@ img{
     cursor: pointer;
 }
 #main .nav button.active{
-    background-color: #D4BDAC;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 #main #cart {
     display: none;
 }
 #main #products .allproducts{
     display: flex;
+    column-gap: 2%;
+    margin-top: 30px;
 }
 #main #products .allproducts .item{
-    padding: 10px;
-    border: 1px solid #D4BDAC;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
 }
 #main #products .allproducts .item .productimg{
     height: 200px;
-    background: #d1cdcd;
+    background: rgba(209, 205, 205, 0.2);
     display: grid;
     place-items: center;
     font-size: 30px;
@@ -52,14 +63,21 @@ img{
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    padding: 10px;
 }
-#main #products .allproducts .item h3 span{
+#main #products .allproducts .item .name{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+#main #products .allproducts .item .price , #main #products .allproducts .item .available{
+    color: rgba(255, 255, 255, 0.8);
     font-size: 16px;
-    color: #5d5a58;
+    
 }
 #main #products .allproducts .quentity{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 #main #products .allproducts .quentity .counter{
@@ -67,18 +85,39 @@ img{
     align-items: center;
     gap: 10px;
 }
+#main #products .allproducts .quentity .counter .count , #main #products .allproducts .quentity  h3{
+    color: rgba(255, 255, 255, 0.8);
+}
 #main #products .allproducts .quentity .counter button{
     font-size: 20px;
     width: 50px;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #main #products .allproducts .addcart{
+    font-weight: 600;
+    letter-spacing: 2px;
     padding: 5px;
     cursor: pointer;
+    background-color: #9AA6B2;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 
 .allcarts{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -88,7 +127,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(93, 90, 88, 0.156);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .allcarts .item button{
     border: none;
